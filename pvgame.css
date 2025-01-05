@@ -1,0 +1,121 @@
+body{
+  margin: 0;
+  padding: 0;
+  background-color: pink;
+  background-image: url(addingfunpictures/addfun2.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: "Montserrat";
+
+}
+
+.Logo img{
+  width: 80%;
+  max-width: 300px;
+  margin: 20px auto;
+  display: block;
+
+
+}
+ .grade-topic{
+  margin: 20px auto;
+  max-width: 800px;
+  text-align: center;
+  color:  white;
+  
+  }
+  .topic-explained{
+  margin: 20px auto;
+  max-width: 800px;
+  text-align: justify;
+  color:  white;
+  }
+
+  p{
+    color:  white;
+    line-height: 1.6;
+  }
+
+
+h1, h2, p{
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2 {
+text-align: center;
+color: brown;
+font-size: 1.5 rem;
+line-height: 1.2;
+}
+
+p{
+  text-align: center;
+  color: black;
+  font-size: 1.5 rem;
+  line-height: 1.2;
+  }
+
+  .para-text{
+    color: rgb(218, 11, 11);
+    font-size: 1.5 rem;
+    line-height: 1.2;
+    }
+
+.topic1-btn, .topic2-btn, .topic3-btn, .topic4-btn, .topic5-btn{
+  display: block;
+  margin: 20px auto;
+  background-color: rgb(69, 143, 223);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-family: 'Montserrat';
+  cursor: pointer;
+  text-align: center;
+  width: 200px;
+}
+
+.topic1-btn:hover, .topic2-btn:hover, .topic3-btn:hover, .topic4-btn:hover, .topic5-btn:hover{
+  background-color: orangered;
+}
+
+@media (max-width: 768px) {
+  body {
+    background-size: cover;
+  }
+
+
+}
+
+h1, h2{
+  font-size: 1.5rem;
+  padding: 0 10px;
+}
+
+.topic1-btn, .topic2-btn, .topic3-btn, .topic4-btn, .topic5-btn {
+  width: 150px;
+  font-size: 0.9rem;
+}
+
+.Logo img{
+  width: 80%
+}
+
+
+@media (max-width: 480px) {
+  h1, h2 {
+    font-size: 1.2rem;
+    line-height: 1.2;
+  }
+
+  .topic1-btn, .topic2-btn, .topic3-btn, .topic4-btn, .topic5-btn{
+    width: 140px;
+    font-size: 0.8rem;
+  }
+
+  .about-text {
+    padding: 0 10px;
+  }
+}
