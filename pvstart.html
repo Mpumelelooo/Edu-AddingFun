@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Place Value Match</title>
+</head>
+<link rel="icon" type="image/x-icon" href="addingfunpictures/+FUN logo-Photoroom.png">
+<link rel="stylesheet" href="pvstart.css">
+
+
+<body>
+
+  <div class="game-container">
+
+    <h1>Place Value Match</h1>
+    <p>Drag the numbers to the correct place value column.</p>
+
+    <div id="draggables">
+
+      <div class="draggable" draggable="true" data-value="hundreds">500</div>
+
+      <div class="draggable" draggable="true" data-value="tens">70</div>
+
+      <div class="draggable" draggable="true" data-value="ones">2</div>
+
+    </div>
+
+    <div class="columns">
+
+      <div class="column">
+
+        <h3>Hundreds</h3>
+
+        <div class="dropzone" data-value="hundreds"></div>
+
+      </div>
+
+      <div class="column">
+
+        <h3>Tens</h3>
+
+        <div class="dropzone" data-value="tens"></div>
+
+      </div>
+
+      <div class="column">
+
+        <h3>Ones</h3>
+
+        <div class="dropzone" data-value="ones"></div>
+      </div>
+    </div>
+    <div id="feedback" class="feedback"></div>
+
+  </div>
+
+  <script>
+
+    const draggables = document.querySelectorAll(".draggable");
+    const dropzones = document.querySelectorAll(".dropzone");
+    const feedback = document.getElementById("feedback");
+    draggables.forEach(draggable => {
+      draggable.addEventListener("dragstart", () => {
+        draggable.classList.add("dragging");
+      });
+      draggable.addEventListener("dragend", () => {
+        draggable.classList.remove("dragging");
+      });
+    });
+
+
+
+    dropzones.forEach(dropzone => {
+      dropzone.addEventListener("dragover", e => {
+        e.preventDefault();
+      });
+
+
+
+      dropzone.addEventListener("drop", e => {
+
+        e.preventDefault();
+
+        const dragging = document.querySelector(".dragging");
+        const correctValue = dropzone.dataset.value;
+        const draggingValue = dragging.dataset.value;
+
+
+
+        if (correctValue === draggingValue) {
+          dropzone.classList.add("correct");
+          dropzone.textContent = dragging.textContent;
+          dragging.remove();
+          feedback.textContent = "Great job!";
+          feedback.style.color = "green";
+        } else {
+          dropzone.classList.add("wrong");
+          feedback.textContent = "Try again!";
+          feedback.style.color = "red";
+        }
+      });
+    });
+
+  </script>
+</body>
+</html>
