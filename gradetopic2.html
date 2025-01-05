@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adding Fun</title>
+</head>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+<link rel="icon" type="image/x-icon" href="addingfunpictures/+FUN logo-Photoroom.png">
+<link rel="stylesheet" href="gradetopic2.css">
+
+<body>
+
+  <div class="Logo">
+    <img src="addingfunpictures/+FUN logo-Photoroom.png">
+  </div>
+
+  <div class="grade-topic">
+    <h1>GRADE 2 <br> PLACE VALUE, SIMPLE MULTIPLICATION & PATTERNS</h1>
+  </div>
+
+  <div class="topic-explained">
+    <p>We will be learning the basics of PLACE VALUE, SIMPLE MULTIPLICATION & PATTERNS.</p>
+  </div>
+
+  <div class="grade-topic">
+    <h1>LESSONS</h1>
+  </div>
+
+
+  <div class="grade-topic">
+    <h1>PLACE VALUE</h1>
+  </div>
+
+  <div class="topic-explained">
+    <p>Place value is the value of each digit in a number based on its position. For example, in the number 463, the digit 4 is in the hundreds place, meaning it represents 400, the digit 6 is in the tens place, representing 60, and the digit 3 is in the ones place, representing 3. Understanding place value helps us read, write, and understand large numbers with ease.</p>
+  </div>
+
+
+  <br><br>
+
+  <div class="grade-topic">
+    <h1>MULTIPLICATION</h1>
+  </div>
+
+  <div class="topic-explained">
+    <p>Multiplication is a way of adding the same number repeatedly. For example, 3 × 6 means you add 3 six times: 3 + 3 + 3 + 3 + 3 + 3 = 18. Multiplication makes counting faster and is used in everyday life, like calculating total items or solving word problems.</p>
+  </div>
+
+  <br><br>
+
+  <div class="grade-topic">
+    <h1>PATTERNS</h1>
+  </div>
+
+  <div class="topic-explained">
+    <p>Patterns are arrangements of numbers, shapes, or objects that follow a specific rule. For instance, in the pattern 1, 3, 5, 7, the rule is to add 2 to the previous number. Recognizing and continuing patterns helps us understand sequences and make predictions.</p>
+  </div>
+
+  <br><br>
+
+  <div class="grade-topic">
+    <h1>EXERCISES</h1>
+  </div>
+
+  <div class="grade-topic">
+    <h1>PLACE VALUE</h1>
+  </div>
+
+  <div class="container">
+    <div class="question-box" id="question-1">
+      <p class="question"><strong>Question:</strong>&nbsp;What is the place value of the digit 7
+      in the number 572?</p>
+      <div class="option" onclick="checkAnswer(this, false, 'feedback-1')">Hundreds</div>
+      <div class="option" onclick="checkAnswer(this, true,'feedback-1')">Tens</div>
+      <div class="option" onclick="checkAnswer(this, false,'feedback-1')">Units</div>
+      <div class="option" onclick="checkAnswer(this, false,'feedback-1')">Thousands</div>
+    </div>
+    <p id="feedback-1"></p>
+  </div>
+<br><br><br>
+
+<div class="grade-topic">
+  <h1>MULTIPLICATION</h1>
+</div>
+
+<br>
+
+<div class="container">
+  <div class="question-box" id="question-2">
+    <p class="question"><strong>Question:</strong>&nbsp;What is the product of 4 X 5?</p>
+    <div class="option" onclick="checkAnswer(this, true,'feedback-2')">20</div>
+    <div class="option" onclick="checkAnswer(this, false, 'feedback-2')">25</div>
+    <div class="option" onclick="checkAnswer(this, false,'feedback-2')">15</div>
+    <div class="option" onclick="checkAnswer(this, false,'feedback-2')">10</div>
+  </div>
+  <p id="feedback-2"></p>
+</div>
+
+<br><br><br>
+<div class="grade-topic">
+  <h1>PATTERNS</h1>
+</div>
+
+<br>
+
+<div class="container">
+  <div class="question-box" id="question-3">
+    <p class="question"><strong>Question:</strong>&nbsp;What comes next in the patten: 2, 4, 6, 8,_</p>
+    <div class="option" onclick="checkAnswer(this, true,'feedback-3')">10</div>
+    <div class="option" onclick="checkAnswer(this, false, 'feedback-3')">12</div>
+    <div class="option" onclick="checkAnswer(this, false,'feedback-3')">14</div>
+    <div class="option" onclick="checkAnswer(this, false,'feedback-3')">16</div>
+  </div>
+  <p id="feedback-3"></p>
+</div>
+  
+<br><br><br>
+
+  
+  <script src="js/script.js"></script>
+  
+</body>
+</html>
