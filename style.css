@@ -1,0 +1,88 @@
+body{
+  margin: 0;
+  padding: 0;
+  background-color: pink;
+  background-image: url(addingfunpictures/addfun1.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: Montserrat;
+
+}
+
+.Logo img{
+  width: 80%;
+  max-width: 300px;
+  margin: 20px auto;
+  display: block;
+
+
+}
+h1, h2{
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2{
+text-align: center;
+color: brown;
+font-size: 1.5 rem;
+line-height: 1.2;
+}
+
+.start-btn{
+  display: block;
+  margin: 20px auto;
+  background-color: rgb(69, 143, 223);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-family: 'Montserrat';
+  cursor: pointer;
+  text-align: center;
+  width: 200px;
+}
+
+.start-btn:hover{
+  background-color: brown;
+}
+
+@media (max-width: 768px) {
+  body {
+    background-size: cover;
+  }
+}
+
+h1, h2{
+  font-size: 1.5rem;
+  padding: 0 10px;
+}
+
+.start-btn {
+  width: 150px;
+  font-size: 0.9rem;
+}
+
+.Logo img{
+  width: 80%
+}
+
+.footer-board{
+  background-color: rgb(69, 143, 223);
+  text-align: center;
+  color: white;
+  padding: 20px 0;
+}
+
+@media (max-width: 480px) {
+  h1, h2 {
+    font-size: 1.2rem;
+    line-height: 1.2;
+  }
+
+  .start-btn {
+    width: 140px;
+    font-size: 0.8rem;
+  }
+}
